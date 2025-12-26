@@ -37,7 +37,7 @@ MUJOCO_MODEL_XML = textwrap.dedent('''\
             <mesh file="ball.stl" scale="0.1 0.1 0.1"/>
         </asset>
         <worldbody>
-            <light name="top" pos=".1 0 1"/>
+            <light name="top" pos=".1 0 10"/>
             <body name="ball">
                 <geom type="mesh" mesh="ball" name="ball" rgba="0 1 0 1" friction="0.75 0.00375 0.000075"/>
                 <freejoint name="object"/>
