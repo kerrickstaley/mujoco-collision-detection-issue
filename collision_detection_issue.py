@@ -22,22 +22,21 @@ import mujoco.viewer
 MUJOCO_MODEL_XML = textwrap.dedent('''\
     <mujoco>
         <option integrator="RK4"/>
-        <option gravity="0 0 -98.1"/>
         <option timestep="0.0002"/>
         <asset>
-            <mesh file="funnel_piece_0.stl" scale="0.1 0.1 0.1"/>
+            <mesh file="funnel_piece_0.stl" scale="0.01 0.01 0.01"/>
         </asset>
         <asset>
-            <mesh file="funnel_piece_120.stl" scale="0.1 0.1 0.1"/>
+            <mesh file="funnel_piece_120.stl" scale="0.01 0.01 0.01"/>
         </asset>
         <asset>
-            <mesh file="funnel_piece_240.stl" scale="0.1 0.1 0.1"/>
+            <mesh file="funnel_piece_240.stl" scale="0.01 0.01 0.01"/>
         </asset>
         <asset>
-            <mesh file="ball.stl" scale="0.1 0.1 0.1"/>
+            <mesh file="ball.stl" scale="0.01 0.01 0.01"/>
         </asset>
         <worldbody>
-            <light name="top" pos=".1 0 10"/>
+            <light name="top" pos=".1 0 1"/>
             <body name="ball">
                 <geom type="mesh" mesh="ball" name="ball" rgba="0 1 0 1" friction="0.75 0.00375 0.000075"/>
                 <freejoint name="object"/>
